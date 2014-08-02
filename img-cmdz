@@ -3,3 +3,5 @@ identify key.png
 #crop and get dimensions of image
 across 0-2 1-127 2-b 3-c 4-d 5-626 6-e
 down 0-f 1-110 2-g 3-319
+class 220 down
+0-85 1-272 2-460 3-646
