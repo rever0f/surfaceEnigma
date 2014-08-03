@@ -5,7 +5,7 @@ html
     / script type='text/javascript' src='./arc-js/arc.min.js'
     script type='text/javascript' src='./jquery-1.11.1.min.js'
     script type='text/javascript' src='./arc-js/arc_loader.js'
-    script type='text/javascript' src='./se.js'
+    script type='text/arc' src='./se.arc'
     link type='text/css' rel='stylesheet' href='./se.css'
     / = javascript_include_tag \
       'jquery',
