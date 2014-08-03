@@ -1,0 +1,12 @@
+%html
+  %head
+    %title surfaceEnigma
+    %script{:type=>"text/javascript",:src=>"./se.js"}
+    %link{:type=>"text/css",:rel=>"stylesheet",:src=>"./se.css"}
+  %body
+    %img#chmt.chr{:href=>"mage-tra.png"}
+    %img#chm.chr{:href=>"mage.png"}
+    %img#chr.chr{:href=>"rogue.png"}
+    %img#chw.chr{:href=>"warrior.png"}
+    %img#cha.chr{:href=>"archer.png"}
+    %img#chv.chr{:href=>"vampire.png"}
