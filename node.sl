@@ -1,3 +1,4 @@
+- a=["mage",'rogue','warrior','archer','vampire']
 doctype 5
 html
   head
@@ -12,12 +13,15 @@ html
       'jquery',
       'arc.js'
   body
-    img#cmat.cha src='./mage-tra.png' alt='mage character'
-    img#cma.cha src='./mage.png' alt='mage character'
-    img#cro.cha src='./rogue.png' alt='rogue character'
-    img#cwa.cha src='./warrior.png' alt='warrior character'
-    img#car.cha src='./archer.png' alt='archer character'
-    img#cva.cha src='./vampire.png' alt='vampire character'
+    - for v in a
+      - za=File.file?(v+'-tra.png')?v+'-tra':v
+      img#cma.cha src = '#{za}.png' alt='#{v} character'
+    /img#cmat.cha src='./mage-tra.png' alt='mage character'
+    /img#cma.cha src='./mage.png' alt='mage character'
+    /img#cro.cha src='./rogue.png' alt='rogue character'
+    /img#cwa.cha src='./warrior.png' alt='warrior character'
+    /img#car.cha src='./archer.png' alt='archer character'
+    /img#cva.cha src='./vampire.png' alt='vampire character'
 
     / form#blue
       &text#blue
