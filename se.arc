@@ -1,2 +1,11 @@
+;; se.js
+;;
+;; author rever0f
+;;
+;; created 20140803
+;;
+;; surface enigma game
+
 (def a ()
-  (xjs "brave"))
+  ;; (xjs "aleph"))
+  (xjs '("aleph" "brave")))

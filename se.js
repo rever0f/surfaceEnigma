@@ -23,13 +23,22 @@
 (new ArcJS.Primitives('user')).define({
   'xjs': [{dot: -1}, function(funcCall) {
       var elblue=document.getElementById('blue');
-    // var fc=funcCall;
-    // alert(typeof(fc));
-    // if(fc instanceof Array)
-    //     alert('mess');
-    // alert(fc instanceof Array);
-      alert('cookie');
-      elblue.innerHTML='cookie';
+      var fc=funcCall; var lc=0; var ms='';
+      // alert(typeof(fc));
+      if(!fc instanceof Object) return;
+      // alert('mess');
+      for(mp in fc) {
+          ms+="<br>\n"+mp;
+          lc++;
+          // if(lc<20) continue;
+          // alert(ms);
+          // alert('a');
+          // lc=0;
+      }
+      // alert(ms);
+
+      // alert(fc instanceof Array);
+      elblue.innerHTML=ms;
   }]
 });
 
@@ -44,7 +53,7 @@ function aev() {
     if (!ArcJS.context().evaluate) return;
     // alert('c');
     // ArcJS.context().evaluate('(= b 1)');
-    ArcJS.context().evaluate('(xjs "a")');
+    // ArcJS.context().evaluate('(xjs "a")');
     // todo get a function defined
     ArcJS.context().evaluate('(a)');
     // alert('a');
