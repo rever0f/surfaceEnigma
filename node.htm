@@ -3,25 +3,23 @@
   <head>
     <title>surfaceEnigma</title>
     <script src="./jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="./arc-js/arc.min.js" type="text/javascript"></script>
+    <script src="./arc-js/arc.js" type="text/javascript"></script>
     <script src="./arc-js/arc_loader.js" type="text/javascript"></script>
     <script src="./se.js" type="text/javascript"></script>
     <script src="./se.arc" type="text/arc">
-      (a)
+      (xjs "a")
     </script>
     <link href="./se.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">
-      alert('cookie');
-    </script>
   </head>
   <body>
-    <img alt="mage character" class="cha" id="cma" name="cma" onclick="arc:(a)" src="mage-tra.png" />
-    <img alt="rogue character" class="cha" id="cma" name="cma" onclick="arc:(a)" src="rogue.png" />
-    <img alt="warrior character" class="cha" id="cma" name="cma" onclick="arc:(a)" src="warrior.png" />
-    <img alt="archer character" class="cha" id="cma" name="cma" onclick="arc:(a)" src="archer-tra.png" />
-    <img alt="vampire character" class="cha" id="cma" name="cma" onclick="arc:(a)" src="vampire.png" />
+    <img alt="mage character" class="cha" id="cma" name="cma" onclick="arc:(xjs &quot;a&quot;)" src="mage-tra.png" />
+    <img alt="rogue character" class="cha" id="cma" name="cma" onclick="arc:(xjs &quot;a&quot;)" src="rogue.png" />
+    <img alt="warrior character" class="cha" id="cma" name="cma" onclick="arc:(xjs &quot;a&quot;)" src="warrior.png" />
+    <img alt="archer character" class="cha" id="cma" name="cma" onclick="arc:(xjs &quot;a&quot;)" src="archer-tra.png" />
+    <img alt="vampire character" class="cha" id="cma" name="cma" onclick="arc:(xjs &quot;a&quot;)" src="vampire.png" />
     <div id="blue" name="blue">
       aleph
     </div>
+    <input id="go" name="go" onclick="aev()" type="button" value="go" />
   </body>
 </html>

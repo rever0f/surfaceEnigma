@@ -6,6 +6,8 @@
 //
 // translator from arc to js
 
+// alert('aleph');
+
 // cross over arc to javascript
 //
 // parameters
@@ -18,19 +20,38 @@
 //
 // function return array with error object of
 // indexed strings on error
-alert('aleph');
-
-//ArcJS.NameSpace.create_with_default('user', null, ['arc.time'], []);
 (new ArcJS.Primitives('user')).define({
   'xjs': [{dot: -1}, function(funcCall) {
-      // elblue=document.getElementById('blue');
+      var elblue=document.getElementById('blue');
     // var fc=funcCall;
     // alert(typeof(fc));
     // if(fc instanceof Array)
     //     alert('mess');
     // alert(fc instanceof Array);
       alert('cookie');
-      // elblue.innerHtml='cookie';
+      elblue.innerHTML='cookie';
   }]
 });
-alert('brave-js');
+
+// alert('brave-js');
+
+// conkeror needs a jumpstart
+function aev() {
+    if (ArcJS) {
+        if (ArcJS.context) {
+            if (ArcJS.context().evaluate) {
+                // alert('c');
+                // ArcJS.context().evaluate('(= b 1)');
+                ArcJS.context().evaluate('(xjs "a")');
+                // todo get a function defined
+                // ArcJS.context().evaluate('(a)');
+                // alert('a');
+            }
+        }
+    }
+}
+
+function gbutton() {
+    ArcJS.context().evaluate('(a)');
+    alert('aleph');
+}
