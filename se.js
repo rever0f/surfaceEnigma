@@ -37,18 +37,17 @@
 
 // conkeror needs a jumpstart
 function aev() {
-    if (ArcJS) {
-        if (ArcJS.context) {
-            if (ArcJS.context().evaluate) {
-                // alert('c');
-                // ArcJS.context().evaluate('(= b 1)');
-                ArcJS.context().evaluate('(xjs "a")');
-                // todo get a function defined
-                // ArcJS.context().evaluate('(a)');
-                // alert('a');
-            }
-        }
-    }
+    if (!ArcJS) return;
+    // alert('a');
+    if (!ArcJS.context) return;
+    // alert('b');
+    if (!ArcJS.context().evaluate) return;
+    // alert('c');
+    // ArcJS.context().evaluate('(= b 1)');
+    ArcJS.context().evaluate('(xjs "a")');
+    // todo get a function defined
+    ArcJS.context().evaluate('(a)');
+    // alert('a');
 }
 
 function gbutton() {
